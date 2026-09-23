@@ -23,6 +23,12 @@ class Pedido
         return round($this->subtotal() * (1 - $percentual / 100), 2);
     }
 
+    public function aplicarCupom(string $codigo): float
+    {
+        $cupons = ['BEMVINDO10' => 10.0, 'FIDELIDADE5' => 5.0];
+        return $this->aplicarDesconto($cupons[$codigo] ?? 0.0);
+    }
+
     // ------------------------------------------------------------------
     // Taxa de serviço
     // ------------------------------------------------------------------
