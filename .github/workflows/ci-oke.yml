@@ -1,0 +1,54 @@
+# Simulação do ci-oke.yml do riser3: o mesmo workflow atende as três branches
+# e decide o ambiente pela branch que disparou. Nada é publicado de verdade.
+name: ci-oke
+
+on:
+  push:
+    branches: [develop, homolog, master]
+
+jobs:
+  build_push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint PHP (simula o build da imagem)
+        run: find . -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Push da imagem (simulado)
+        run: echo "imagem treino:${GITHUB_SHA::7} publicada no registry (simulado)"
+
+  deploy_develop:
+    needs: build_push
+    if: github.ref_name == 'develop'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Publicando em DEV (simulado)"
+
+  deploy_homolog:
+    needs: build_push
+    if: github.ref_name == 'homolog'
+    runs-on: ubuntu-latest
+    environment:
+      name: homolog
+      url: https://homolog.treino.example.com
+    steps:
+      - run: sleep 20 && echo "Publicando em HOMOLOG (simulado)"
+
+  deploy_production:
+    needs: build_push
+    if: github.ref_name == 'master'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://prod.treino.example.com
+    steps:
+      - run: sleep 20 && echo "Publicando em PRODUÇÃO - cluster OKE (simulado)"
+
+  deploy_legacy_production:
+    needs: build_push
+    if: github.ref_name == 'master'
+    runs-on: ubuntu-latest
+    environment:
+      name: production-legacy
+      url: https://legado.treino.example.com
+    steps:
+      - run: sleep 20 && echo "Publicando em PRODUÇÃO - VM legada (simulado)"

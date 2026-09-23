@@ -1,0 +1,7 @@
+# dependências
+vendor/
+node_modules/
+
+# ambiente
+.env
+*.log
