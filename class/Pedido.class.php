@@ -27,9 +27,9 @@ class Pedido
     // Taxa de serviço
     // ------------------------------------------------------------------
 
-    public function calcularTaxaServico(): float
+    public function calcularTaxaServico(float $percentual = 10.0): float
     {
-        return round($this->subtotal() * 0.10, 2);
+        return round($this->subtotal() * $percentual / 100, 2);
     }
 
     // ------------------------------------------------------------------
