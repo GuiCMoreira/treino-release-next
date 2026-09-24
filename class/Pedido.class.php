@@ -44,6 +44,6 @@ class Pedido
 
     public static function formatarValor(float $valor): string
     {
-        return 'R$ ' . $valor;
+        return 'R$ ' . number_format($valor, 2, ',', '.');
     }
 }
