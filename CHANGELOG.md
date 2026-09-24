@@ -2,6 +2,7 @@
 
 ## [Não lançado]
 - TRE-199 | FISCAL | ICMS passa a respeitar a alíquota de cada UF
+- TRE-203 | PEDIDO | Taxa de serviço configurável por loja
 - TRE-200 | ESTOQUE | Alerta de estoque mínimo
 
 ## [v2026-09-21]
