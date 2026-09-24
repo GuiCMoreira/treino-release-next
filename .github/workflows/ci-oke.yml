@@ -1,4 +1,4 @@
-# Simulação do ci-oke.yml do riser3: o mesmo workflow atende as três branches
+# Simulação do ci-oke.yml do sistema real: o mesmo workflow atende as três branches
 # e decide o ambiente pela branch que disparou. Nada é publicado de verdade.
 name: ci-oke
 
