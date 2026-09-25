@@ -366,7 +366,7 @@ git show --remerge-diff --format= --name-only origin/release/v<DATA>   # só tex
 **6. Descrição da PR:** tabela das PRs, hotfixes absorvidos, emergenciais da homolog, e **Rollout**
 (script | card/PR | como rodar | idempotente? | antes/depois | se não rodar), provas.
 
-**7. Portão** 🛑 — resumo para a tech lead:
+**7. Portão** 🛑 — resumo para o tech lead:
 ```
 Release v<DATA> pronta para o deploy — PRs #N (R3) e #N (R1).
 *Sobem N cards:* ...
