@@ -343,7 +343,7 @@ poupa uma rodada de "como eu testo isso?".
 
 ## 5. Roteiro da SEGUNDA — deploy
 
-> Ainda não treinado. Antes de começar, simule o "fim de semana": um hotfix direto na `master`
+> Treinado em 25/09/2026. Antes de começar, simule o "fim de semana": um hotfix direto na `master`
 > e uma PR emergencial direto na `homolog` (de preferência trazendo um script em
 > `varlib/comandos/`). É isso que gera o conflito no merge da produção na branch de release.
 
@@ -394,7 +394,7 @@ Resumo dos passos (o detalhe está no [guia](docs/GUIA_RELEASE_DEPLOY.md), Parte
 
 | Arquivo | O que é |
 |---|---|
-| [`docs/GUIA_RELEASE_DEPLOY.md`](docs/GUIA_RELEASE_DEPLOY.md) | o guia completo, quinta → sexta → segunda, com comandos e mensagens modelo |
+| [`docs/GUIA_RELEASE_DEPLOY.md`](docs/GUIA_RELEASE_DEPLOY.md) | o guia completo (v2), quinta → sexta → segunda, com comandos, mensagens modelo e o que foi aprendido na primeira quinta real e no treino do deploy |
 | [`docs/RELATO_2026-09-24.md`](docs/RELATO_2026-09-24.md) | o que aconteceu no primeiro treino e na primeira quinta real, com as lições |
 | [`scripts/setup_treino.sh`](scripts/setup_treino.sh) | monta o cenário na sua conta |
 
