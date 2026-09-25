@@ -23,13 +23,19 @@ class Pedido
         return round($this->subtotal() * (1 - $percentual / 100), 2);
     }
 
+    public function aplicarCupom(string $codigo): float
+    {
+        $cupons = ['BEMVINDO10' => 10.0, 'FIDELIDADE5' => 5.0];
+        return $this->aplicarDesconto($cupons[$codigo] ?? 0.0);
+    }
+
     // ------------------------------------------------------------------
     // Taxa de serviço
     // ------------------------------------------------------------------
 
-    public function calcularTaxaServico(): float
+    public function calcularTaxaServico(float $percentual = 10.0): float
     {
-        return round($this->subtotal() * 0.10, 2);
+        return round($this->subtotal() * $percentual / 100, 2);
     }
 
     // ------------------------------------------------------------------

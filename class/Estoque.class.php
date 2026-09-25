@@ -19,4 +19,9 @@ class Estoque
     {
         return $this->saldos[$produto] ?? 0;
     }
+
+    public function abaixoDoMinimo(string $produto, int $minimo): bool
+    {
+        return $this->saldo($produto) < $minimo;
+    }
 }
