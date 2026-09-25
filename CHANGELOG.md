@@ -4,6 +4,11 @@
 - TRE-199 | FISCAL | ICMS passa a respeitar a alíquota de cada UF
 - TRE-203 | PEDIDO | Taxa de serviço configurável por loja
 - TRE-200 | ESTOQUE | Alerta de estoque mínimo
+- TRE-210 | ESTOQUE | Saldo negativo após transferência (emergencial, traz script)
+## [v2026-09-21-hotfix2]
+### Correções
+- TRE-211 | ESTOQUE | Baixa duplicada ao cancelar pedido
+
 - TRE-212 | PEDIDO | Total do pedido já com a taxa de serviço
 ## [v2026-09-21-hotfix]
 ### Correções
