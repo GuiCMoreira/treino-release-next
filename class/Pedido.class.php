@@ -38,6 +38,11 @@ class Pedido
         return round($this->subtotal() * $percentual / 100, 2);
     }
 
+    public function totalComTaxa(): float
+    {
+        return round($this->subtotal() + $this->calcularTaxaServico(), 2);
+    }
+
     // ------------------------------------------------------------------
     // Formatação
     // ------------------------------------------------------------------

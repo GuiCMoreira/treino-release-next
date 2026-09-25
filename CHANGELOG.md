@@ -9,6 +9,7 @@
 ### Correções
 - TRE-211 | ESTOQUE | Baixa duplicada ao cancelar pedido
 
+- TRE-212 | PEDIDO | Total do pedido já com a taxa de serviço
 ## [v2026-09-21-hotfix]
 ### Correções
 - TRE-150 | PEDIDO | Valor aparecia sem casas decimais no cupom
