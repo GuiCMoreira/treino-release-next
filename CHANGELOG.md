@@ -5,6 +5,10 @@
 - TRE-203 | PEDIDO | Taxa de serviço configurável por loja
 - TRE-200 | ESTOQUE | Alerta de estoque mínimo
 - TRE-210 | ESTOQUE | Saldo negativo após transferência (emergencial, traz script)
+## [v2026-09-21-hotfix2]
+### Correções
+- TRE-211 | ESTOQUE | Baixa duplicada ao cancelar pedido
+
 ## [v2026-09-21-hotfix]
 ### Correções
 - TRE-150 | PEDIDO | Valor aparecia sem casas decimais no cupom
